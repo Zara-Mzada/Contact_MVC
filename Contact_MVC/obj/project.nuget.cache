@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8i+0Hkj+N2hOUywtDXUsBAGyNKNHr6gmCb7Y8y1vEMd0Ldy9D0rbWqNm71l9zEwFZgFDK4BuEMk2DABSQQ4rzQ==",
+  "success": true,
+  "projectFilePath": "/Users/zara/RiderProjects/Contact_MVC/Contact_MVC/Contact_MVC.csproj",
+  "expectedPackageFiles": [
+    "/Users/zara/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

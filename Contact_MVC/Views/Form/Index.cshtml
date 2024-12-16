@@ -1,0 +1,28 @@
+@{
+    Layout = "_Layout";
+}
+@model Contact
+@section form{
+    <link rel="stylesheet" href="css/form.css"/>
+}
+
+<form class="form-container" asp-controller="Form" asp-action="Submit" method="post" enctype="multipart/form-data">
+    <h2>Create new contact</h2>
+    <div class="form-item">
+        <label asp-for="Name">Name</label>
+        <input type="text" class="name_input" asp-for="Name" placeholder="Enter name..." required="required"/>
+    </div>
+    <div class="form-item">
+        <label asp-for="Surname">Surname</label>
+        <input type="text" class="surname_input" asp-for="Surname" placeholder="Enter surname..." required="required"/>
+    </div>
+    <div class="form-item">
+        <label asp-for="Number">Phone</label>
+        <input type="number" class="number_input" asp-for="Number" placeholder="Enter number..." required="required"/>
+    </div>
+    <div class="form-item">
+        <label asp-for="URL">Photo</label>
+        <input type="url" class="photo_input" asp-for="URL" placeholder="Enter photo's url..."/>
+    </div>
+    <button type="submit" class="submit_btn" id="submit_btn">Submit</button>
+</form>
