@@ -7,24 +7,22 @@ namespace Contact_MVC.Controllers;
 
 public class ContactController : Controller
 {
-    private ContactRepository _contactRepository;
-    public ContactController()
-    {
-        this._contactRepository = new ContactRepository();
-    }
 
     public IActionResult GetContact()
     {
         if (TempData["Contact"] is not null)
-        {
+        { 
             var contact = JsonConvert.DeserializeObject<Contact>(TempData["Contact"].ToString());
-            _contactRepository.AddContact(contact);
+            ContactRepository.AddContact(contact);
         }
-        return View("Index");
+
+        return RedirectToAction("Index");
     }
     public IActionResult Index()
     {
-        return View(this._contactRepository.GetContacts());
+        return View(ContactRepository.GetContacts());
     }
     
 }
+
+// data annotation, tag helper, data bos gelende hansi input bosdursa ekranda gostersin, limit qoymaq saya, error message tag helperle

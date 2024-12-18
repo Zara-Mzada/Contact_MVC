@@ -1,15 +1,20 @@
 @model List<Contact>
-@{
-    Layout = "_Layout";
-}
+
+
 @section contact
 {
     <link rel="stylesheet" href="~/css/contact.css" />
 }
+
+
 <h1 class="text-center my-5">All contacts</h1>
 <ul class="main-container">
-    @foreach (Contact contact in Model)
+    @foreach (var contact in Model)
     {
-    @await Html.PartialAsync("Partial/ContactPartial", contact);
+        <li class="item">
+            <img class="image" src="@contact.URL"/>
+            <p class="name">@contact.Name</p>
+            <p class="surname">@contact.Surname</p>
+        </li>
     }
 </ul>

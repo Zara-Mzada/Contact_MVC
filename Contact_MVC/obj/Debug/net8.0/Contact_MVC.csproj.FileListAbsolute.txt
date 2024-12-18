@@ -31,3 +31,4 @@
 /Users/zara/RiderProjects/Contact_MVC/Contact_MVC/bin/Debug/net8.0/Newtonsoft.Json.dll
 /Users/zara/RiderProjects/Contact_MVC/Contact_MVC/obj/Debug/net8.0/Contact_MVC.csproj.AssemblyReference.cache
 /Users/zara/RiderProjects/Contact_MVC/Contact_MVC/obj/Debug/net8.0/Contact_.75451CF8.Up2Date
+/Users/zara/RiderProjects/Contact_MVC/Contact_MVC/obj/Debug/net8.0/Contact_MVC.sourcelink.json

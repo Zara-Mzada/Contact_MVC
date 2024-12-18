@@ -2,9 +2,9 @@ using Contact_MVC.Models;
 
 namespace Contact_MVC.Repository;
 
-public class ContactRepository
+public static class ContactRepository
 {
-    private List<Contact> contacts = new List<Contact>()
+    private static List<Contact> contacts = new List<Contact>()
     {
         new Contact() { ID = 1, Name = "John", Surname = "Doe", Number = "1234567890", URL = "img/contact1.png"},
         new Contact() { ID = 2, Name = "Jane", Surname = "Smith", Number = "0987654321", URL = "img/contact5.png"},
@@ -28,12 +28,12 @@ public class ContactRepository
         new Contact() { ID = 20, Name = "Ava", Surname = "King", Number = "9000112233", URL = "img/contact6.png"}
     };
 
-    public List<Contact> GetContacts()
+    public static List<Contact> GetContacts()
     {
-        return this.contacts;
+        return contacts;
     }
 
-    public void AddContact(Contact contact)
+    public static void AddContact(Contact contact)
     {
         contacts.Add(contact);
         Console.WriteLine("Contact added");
